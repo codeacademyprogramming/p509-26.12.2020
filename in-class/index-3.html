@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.open {
+			display: block;
+			color: red;
+			background-color: beige;
+			font-size: 16px;
+		}
+		.closed {
+			display: none;
+		}
+	</style>
+</head>
+
+<body data-about="1" data-code="2" data-test="3" something='55'>
+	<!-- <input id="newId" value="text"> -->
+
+	<h1 style="border-top-right-radius: red;">Hello</h1>
+
+	<script>
+
+		document.body.style.cssText = `
+			color: red;
+			background-color: beige;
+			font-size: 16px;`
+
+		// document.querySelector('h1').removeAttribute('style');
+
+		// document.querySelector('input').id // newId
+		// document.querySelector('input').something // undefined
+		// document.querySelector('input').getAttribute('id') // newId
+		// document.querySelector('input').getAttribute('something') // 55
+
+
+
+		// console.log(document.body.dataset.about, 'about')
+		// console.log(document.body.dataset.code, 'code')
+		// console.log(document.body.dataset.test, 'test')
+
+
+	</script>
+</body>
+
+</html>
